@@ -1,0 +1,22 @@
+Background to setting up the github website (following pages.github.com):
+Made a public repository with sandra444.github.io
+(base) C:\Users\sandr\Documents\sandra444>git clone https://github.com/sandra444/sandra444.github.io
+(base) C:\Users\sandr\Documents\sandra444>cd sandra444.github.io
+(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+nothing to commit, working tree clean
+(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>
+
+
+To update my website:
+update the skillstable.csv
+PS C:\Users\sandr\Documents\sandra444\sandra444.github.io> python csvtojson.py skillstable.csv (in VSC terminal)
+(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>python -m http.server 8000 (in Anaconda3 prompt - http://localhost:8000/)
+Copy the list of skills printed in the terminal into the main.js file
+Make any updates that are needed to the index.html file (and main.js, if needed)
+(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git status
+(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git config --global user.email "sandrakarcher44@gmail.com"
+(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git config --global user.name "sandra444"
+(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git commit -m "Website 20240219"
+Note: I added my github token. The -u is to --set-upstream (automatically link your local to your remote)

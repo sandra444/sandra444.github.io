@@ -1,0 +1,124 @@
+/* The side navigation menu */
+.sidebar {
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+	display: block;
+	color: black;
+	padding: 16px;
+	text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+	background-color: #2e0263;
+	color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover:not(.active) {
+	background-color: #6d6d6d;
+	color: white;
+  }
+  
+  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+  div.content {
+	margin-left: 200px;
+	padding: 1px 16px;
+	height: 1000px;
+  }
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+	.sidebar {
+	  width: 100%;
+	  height: auto;
+	  position: relative;
+	}
+	.sidebar a {float: left;}
+	div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+	.sidebar a {
+	  text-align: center;
+	  float: none;
+	}
+  }
+
+
+  /* to support tooltip */
+  .tooltip2 {
+	position: relative;
+	display: inline-block;
+	border-bottom: 0px dotted rgb(0, 0, 0);
+	vertical-align: top;
+  }
+  
+  .tooltip2 .tooltip2-text {
+	visibility: hidden;
+	width: 250px;
+	background-color: #2e0263;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 5px;
+	font-size: 12pt;
+	font-weight: 150;
+	line-height: 1.1;
+  
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+  }
+  
+  .tooltip2:hover .tooltip2-text {
+	visibility: visible;
+  }
+
+  .tooltip2 .tooltip2-text {
+	top: -5px;
+	left: 105%;
+  }
+
+
+  /* more css adding for purple theme */
+  .color-p1 {
+	color: #2e0263;
+  }
+  .color-p2 {
+	color: white;
+  }
+  .background-color-p1 {
+	background-color: #2e0263;
+  }
+
+  /* center images and put at the bottom */
+  .image-center-bottom {
+	display: block;
+	margin: auto;
+  }
+  .vertical-align-top {
+	vertical-align: top;
+  }
+  .limit-line-height {
+	line-height: 70%;
+  }
+  .no-border {
+	border: 0px;
+  }
+  .h1-font-size {
+	font-size: 2.5rem;
+  }
+  .h3-font-size {
+	font-size: 1.75rem;
+  }

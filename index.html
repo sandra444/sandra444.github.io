@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Sandra Karcher</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Sandra Karcher's Interactive Resume">
+		<link rel="icon"
+			type="image/png"
+			href="images/favicon.png">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="main.css">
+
+		<link
+		rel="stylesheet"
+		type="text/css"
+		href="https://cdn.datatables.net/2.0.0/css/dataTables.dataTables.css"
+		/>
+		<script
+		type="text/javascript"
+		charset="utf8"
+		src="https://code.jquery.com/jquery-3.7.1.js"
+		></script>
+		<script
+		type="text/javascript"
+		charset="utf8"
+		src="https://cdn.datatables.net/2.0.0/js/dataTables.js"
+		></script>
+
+		<!-- <script src="jquery-3.5.1.min.js"></script> -->
+		<!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+
+		<script src="main.js"></script>		
+	</head>
+
+	<body>
+		<div id="sidebar" class="sidebar">
+			<a id="about_nav" class="active" href="#about">About</a>
+			<a id="skill_nav" href="#skill">Skills</a>
+			<a id="certification_nav" href="#certification">Certifications</a>
+			<a id="education_nav" href="#education">Education</a>
+			<a id="experience_nav" href="#experience">Experience</a>
+			<a id="publication_nav" href="#publication">Publications</a>	
+			<br><hr><br>
+			<a id="print_nav" href="#print">Resume</a>
+			<a id="expand_nav" href="#expand">CV</a>	
+			<!-- <a id="close_nav" href="#close">Close All</a>	 -->
+		</div>
+
+		<div class="content">
+
+			<div id="print" class="stop-point"></div>
+			<div id="expand" class="stop-point"></div>
+
+
+			<div id="about" class="stop-point">
+				<h1 class="color-p1 fw-bolder pt-4 ">Sandra C. Karcher, PhD, PE</h1>				
+				<button name="div_button" type="button" class="no-print1 btn btn-light color-p2 background-color-p1 div-collapsible">Click to toggle section display on/off</button>
+				<div>
+					<div class="no-print2">
+						<br>
+						<p>Thanks for visiting my CV/resume page! I last updated this page in February 2024.</p>		
+						
+						<p>This is the best place to get to know me, but you can also find me on:</p>
+						<ul>
+							<li><a href="https://www.linkedin.com/in/sandrakarcher44/" target="_blank">LinkedIn</a></li>
+							<li><a href="https://www.researchgate.net/profile/Sandra-Karcher" target="_blank">ResearchGate</a></li>
+						</ul>
+
+						<p>The best way to reach me is by email at SandraKarcher44@gmail.com (or
+						<a href="mailto:SandraKarcher44@gmail.com" target="_blank">click here</a> to send me an email).</p>
+					</div>
+					<div>
+						<p>I am an experienced IT professional with a broad background in software design and development, database management, statistical analysis, geospatial modeling, teaching, training, proposal writing, and report preparation. Specific areas of expertise include developing algorithms and writing scripts to extract, transform, cleanse, slice, analyze, aggregate, and visualize data. Specific fields of interest include chemistry, biology, and biomedical informatics.</p>
+					</div>	
+					<div class="no-print2">
+						<p>The common thread of my professional experience is working with data. My data journey started with an internship with the Maryland Environmental Service, where I used soil and water sampling data, weather data, and projected dredged material inflow data to model mass balance and estimate the remaining life of Hart-Miller Island. In my first job after graduating from college, I collected soil and water samples from an Air Force base in Arizona, then organized, complied, cleaned, and submitted the data to the Air Force for inclusion in their Environmental Resources Program Info Management System (ERPIMS, formerly IRPIMS). I continued working with laboratory data for several years.</p>
+						<p>In 2000, I started graduate school and graduated with a PhD from Carnegie Mellon University. Over the next several years, I explored teaching (teaching classes at Geneva College and Carnegie Mellon University) and worked on a research project using ArcGIS to model the effects of watershed management practices. In 2014, my career began to pivot to focus on biology data and web application development.</p>
+						<p>Since 2016, I have been working as a software/database engineer on the Microphysiology Systems Database (MPS-Db), a publicly accessible web application funded by the National Center for Advancing Translational Sciences (NCATS) and developed at the University of Pittsburgh Drug Discovery Institute. The MPS-Db was a platform for capturing, managing, visualizing, analyzing and sharing experimental study data. In 2023, the MPS-Db was merged into Numa Biosciences (formerly Nortis), and in 2024, the platform transitioned to a subscription service, EveAnalytics. </p>
+						
+						<div class="container">
+							<div class="row d-flex align-items-end">
+								<div class="col-md-4 text-center">
+									<img src="images/sandra_early.jpg" style="width: 65%;" alt="First Job">
+									<p>My First Job</p>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="images/sandra_talking.jpg" style="width: 90%;" alt="Exploring Teaching">
+									<p>Teaching</p>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="images/sandra_blacksand.jpg" style="width: 50%;" alt="Traveling">
+									<p>Traveling</p>
+								</div>					
+							</div>
+						</div>
+
+						<br>
+						<h3>Fun Facts About Me</h3>
+						<ul>
+							<li>I am a lifelong leaner.</li>
+							<li>I am detail oriented.</li>
+							<li>I have good people skills and communicate effectively.</li>
+							<li>I enjoy working collaboratively and independently.</li>		
+							<li>I think working with data is like solving a puzzle and I enjoy solving puzzles.</li>	
+							<li>I like animals and watch too many vet shows.</li>
+							<li>I help with the children's ministry at my church.</li>
+							<li>I play the flute in the Harrisville Community Band, the Mercer Community Band, and in the ACTS Orchestra.</li>
+							<li>I manage the websites for the Harrisville Community Band (<a href="https://harrisvillecommunityband.weebly.com" target="_blank">https://harrisvillecommunityband.weebly.com</a>) and for ACTS (<a href="http://www.adoringchristthrusong.org" target="_blank">http://www.adoringchristthrusong.org</a>).</li>
+							<li>I enjoy bike riding.</li>	
+							<li>I have nine siblings.</li>						
+							<li>I am a fan of Star Trek, Star Wars, Stargate, and Fringe.</li>
+							<li>My favorite joke: I am not an outlier, I just haven't found my distribution yet.</li>	
+						</ul>
+
+						<p>My brain functions best when it has time to mull over complex problems, break them into pieces, and place each piece into a network. This makes me great at spotting when things do not fit in the network, and after more mulling time, finding ways to realign the solution network to incorporate outliers.</p>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="skill" class="stop-point">
+				<h1 class="color-p1 fw-bolder pt-4 ">My Skills</h1>				
+				<button name="div_button" type="button" class="no-print1 btn btn-light color-p2 background-color-p1 div-collapsible">Click to toggle section display on/off</button>
+				<div>
+					<div class="no-print2">
+						<br>
+						<h3>Skills as a List</h3>
+					</div>
+					<div>
+						<ul id="skills_list"></ul>
+					</div>
+					<div class="no-print2">
+						<br>
+						<h3>Skills as a Searchable and Sortable Table										
+							<div class="tooltip2">
+								<svg class="vertical-align-top" xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-question-square" viewBox="0 0 16 16">
+								<path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+								<path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+								</svg>
+								<span class="tooltip2-text">Use the search box to search the table by the content of any column. Use the dropdown to select the number of entries to show in the table. Use the up and down arrows in the column headers to sort the rows. For multi-column sort, sort the first column, then hold the shift key and then click the sort arrows in additional columns.</span>
+							</div>			
+						</h3>					
+			
+						<table id="skills_datatable" class="display" width="100%"></table>
+			
+						<br>
+						<h3>Skills in a .json file</h3>
+						<p><a href="skills.json">Click here</a> for skills as an endpoint.</p>
+					</div>
+				</div>   
+			</div>
+		
+			<div id="certification" class="stop-point">
+				<h1 class="color-p1 fw-bolder pt-4 ">My Certifications & Licenses</h1>				
+				<button name="div_button" type="button" class="no-print1 btn btn-light color-p2 background-color-p1 div-collapsible">Click to toggle section display on/off</button>
+				<div>
+					<div class="no-print2">
+						<br>
+						<div class="container">
+							<div class="row d-flex align-items-end">
+								<div class="col-md-4 text-center">
+									<img src="images/pms1.png" style="width: 57%;" alt="PSM I">
+									<p>Scrum Master</p>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="images/pe2025.jpg" style="width: 87%;" alt="PE">
+									<p >Professional Engineer</p>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="images/biomedical.jpg" style="width: 79%;" alt="Biomedical">
+									<p>Biomedical Informatics</p>
+								</div>					
+							</div>
+						</div>
+					</div>
+					<div>
+						<br>
+						<ul>
+							<li><b>Professional Scrum Master I - Scrum.org</b>
+								<ul><li>Verify here: <a href="https://www.scrum.org/certificates/866796" target="_blank">https://www.scrum.org/certificates/866796</a> - enter enter SandraKarcher44@gmail.com</li></ul>
+							</li>
+							<li><b>Pennsylvania Department of State, Professional Engineer License PE082453</b>
+								<ul><li>Verify here: <a href="https://www.pals.pa.gov/#!/page/search" target="_blank">https://www.pals.pa.gov/#!/page/search</a> - enter Last Name: Karcher, First Name: Sandra and click Search</li></ul>
+							</li>
+							<li><b>Biomedical Informatics Certificate (April 2022), University of Pittsburgh</b></li>				 
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div id="education" class="stop-point">
+				<h1 class="color-p1 fw-bolder pt-4 ">Education</h1>				
+				<button name="div_button" type="button" class="no-print1 btn btn-light color-p2 background-color-p1 div-collapsible">Click to toggle section display on/off</button>
+				<div>
+					<div class="no-print2">
+						<br>
+						<div class="container">
+							<div class="row d-flex align-items-end">
+								<div class="col-md-4 text-center">
+									<img src="images/phd.jpg" style="width: 70%;" alt="PhD">
+									<p>PhD</p>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="images/master.jpg" style="width: 69%;" alt="Master's">
+									<p>Master's</p>
+								</div>
+								<div class="col-md-4 text-center">
+									<img src="images/bs.jpg" style="width: 55%;" alt="BS">
+									<p>BS</p>
+								</div>					
+							</div>
+						</div>
+					</div>
+					<div>
+						<br>
+						<ul>
+							<li>Ph.D. Civil and Environmental Engineering, Carnegie Mellon University</li>
+							<li>M.S. Civil and Environmental Engineering, Carnegie Mellon University</li>
+							<li>B.S. Civil and Environmental Engineering, University of Maryland</li>
+						</ul>
+					</div>
+				</div>
+			</div>			
+
+			<div id="experience" class="stop-point">
+				<h1 class="color-p1 fw-bolder pt-4 ">My Experience/Job History</h1>				
+				<button name="div_button" type="button" class="no-print1 btn btn-light color-p2 background-color-p1 div-collapsible">Click to toggle section display on/off</button>
+				<div>
+					<div>		
+						<br>
+						<ul>
+							<li><b>2023 to Current – Senior Software Engineer, Numa Biosciences (formerly Nortis)</b>
+								<ul>
+									<li>Designed and developed a tool that enables uploading and downloading of data and metadata into and out of EveAnalytics (formerly known as the Microphysiology Systems Database (MPS-Db) and the BioSystics-AP) using the same data format.</li>
+									<li>Led the development team through the process of transitioning biosystics-ap.com (an open data repository) to eveanalytics.com (a subscription-based data management and analytics platform).</li>
+									<li>Acted as Scrum Master (using the Agile methodology) throughout the process of transitioning biosystics-ap.com to eveanalytics.com.</li>
+								</ul>
+							</li>
+							
+							<li><b>2016 to 2023 - Staff System/Programmer, University of Pittsburgh Drug Discovery Institute</b>
+								<ul>
+									<li>Deployed Django web application in AWS using Elastic Beanstalk.</li>
+									<li>Enabled the integration of transcriptomic data into the MPS-Db.</li>
+									<li>Designed and developed a statistical tool to calibrate raw plate reader assay data and incorporated it into the MPS-Db.</li>
+									<li>Developed algorithms to extract, transform, cleanse, slice, analyze, aggregate, and visualize data to support downstream analysis, modeling, and visualization (primarily using Python, VBA and SQL).</li>
+									<li>Prepared training materials and provided training to internal team members and external collaborators.</li>
+									<li>Provided training at technical support to users of the MPS-Db.</li>
+									<li>Designed an effective data governance framework for uploading data into the MPS-Db (e.g., defining the parameters for data acquisition, import, and usage; selecting appropriate controlled vocabulary to enable data from disparate sources to be aggregated together; creating processes for identifying and resolving data quality issues).</li>
+								</ul>
+							</li>
+							
+							<li><b>2014 to 2016 - Postdoctoral Project Engineer, Carnegie Mellon University</b>
+								<ul>
+									<li>Worked in collaboration with the Center for the Environmental Implications of NanoTechnology, nanoHUB, and the Nanomaterial-Biological Interactions Knowledgebase to develop analytical and visualization informatics tools to be used on experimental data exploring the fate and associated risk of introducing nanomaterials into the environment (<a href="https://nanohub.org/resources/23991" target="_blank">https://nanohub.org/resources/23991</a>).</li>
+									<li>Designed and built a relational database to aggregate, store, and maintain data collected as part of experimental studies performed using nanomaterials.</li>
+								</ul>
+							</li>
+							
+							<li><b>2013 to 2014 - Adjunct Professor, Carnegie Mellon University</b>
+								<ul>
+									<li>Taught Databases & Data Systems for Environmental Modeling, a hands-on class focused on finding, formatting and visualizing data frequently used in environmental modeling.</li>
+								</ul>
+							</li>
+
+							<li><b>2009 to 2012 - Postdoctoral Research Associate, Carnegie Mellon University</b>
+								<ul>
+									<li>Collaborated with colleagues at the EPA to assess the challenges associated with modeling water systems from the watershed through the drinking water treatment process.</li>
+									<li>Used the Soil and Water Assessment Tool (SWAT), an ArcGIS modeling tool, to quantify changes in nutrient loading resulting from changes in watershed management practices.</li>
+								</ul>
+							</li>
+							
+							<li><b>2006 to 2008 - Adjunct Professor, Geneva College</b>
+								<ul>
+									<li>Taught Solid & Hazardous Waste Management and Water & Wastewater Treatment. The solid waste class focused on the collection, transformation, and disposal of solid and hazardous waste. The water class included a weekly lab and focused on technologies used in testing and treating water. </li>
+								</ul>
+							</li>						
+
+							<li><b>2000 to 2005 - Graduate Student, Carnegie Mellon University (Master’s & PhD)</b>
+								<ul>
+									<li>Designed and developed a statistical modeling tool to determine the likely pathways of dechlorination of polychlorinated biphenyls in river sediments. Tool implementation required extensive use and integration of Microsoft Access and Excel using Visual Basic for Applications (VBA) and SQL.</li>
+									<li>Served as teaching assistant for the freshman level introduction to civil and environmental engineering course and for the graduate level probability and statistics course.</li>
+								</ul>
+							</li>
+
+							<li><b>1993 to 2002 – President & Consultant, Data Systems DCM</b>
+								<ul>
+									<li>Compiled and standardized U.S Air Force environmental sampling data from multiple sources provided in a variety of formats.</li>
+									<li>Developed and programmed tools to search for patterns, trends, and anomalies in data; to flag potentially erroneous data; and to cleanse the database (primarily using VBA and SQL).</li>
+								</ul>
+							</li>						
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div id="publication" class="stop-point">
+				<h1 id="h1_publications" class="color-p1 fw-bolder pt-4 no-print1">Publications</h1>				
+				<button name="div_button" type="button" class="no-print1 btn btn-light color-p2 background-color-p1 div-collapsible">Click to toggle section display on/off</button>
+				<div>
+					<div>
+						<br>
+						<h3 id="h3_recent_publications">Recent Publications</h3>
+						<ul>
+							<li>Schurdak M, Vernetti L, Bergenthal L, Wolter QK, Shun TY, Karcher S, Taylor DL, Gough A, Applications of the microphysiology systems database for experimental ADME-Tox and disease models. Lab Chip. 2020 Apr 14; 20(8):1472-1492. 
+								<ul>
+									<li><a href="https://doi.org/10.1039/C9LC01047E" target="_blank">https://doi.org/10.1039/C9LC01047E</a></li>
+								</ul>
+							</li>
+
+							<li>Dilán-Pantojas, IO, Boonchalermvichien, T, Taneja, SB, Li, X, Chapin, MR, Karcher, S, Boyce, RD, Broadening the capture of natural products mentioned in FAERS using fuzzy string-matching and a Siamese neural network. Sci Rep 14, 1272 (2024). 
+								<ul>
+									<li><a href="https://doi.org/10.1038/s41598-023-51004-4" target="_blank">https://doi.org/10.1038/s41598-023-51004-4</a></li>
+								</ul>
+							</li>
+
+							<li>Karcher, S.C., Harper, B.J., Harper, S.L., Hendren, C.O., Wiesner, M.R., Lowry, G.V., Visualization Tool for Correlating Nanomaterial Properties and Biological Responses in Zebrafish. Environmental Science: Nano 3: 1280-1292 (2016). 
+								<ul>
+									<li><a href="https://doi.org/10.1039/C6EN00273K" target="_blank">https://doi.org/10.1039/C6EN00273K</a></li>
+								</ul>
+							</li>							
+
+							<li>Marchese Robinson RL, Lynch I, Peijnenburg W, Rumble J, Klaessig F, Marquardt C, Rauscher H, Puzyn T, Purian R, Åberg C, Karcher S, Vriens H, Hoet P, Hoover MD, Hendren CO, Harper SL. How should the completeness and quality of curated nanomaterial data be evaluated? Nanoscale. 2016 May 21; 8(19):9919-43. 
+								<ul>
+									<li><a href="https://doi.org/10.1039/C5NR08944A" target="_blank">https://doi.org/10.1039/C5NR08944A</a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</div>
+					<div class="no-print2">
+						<br>
+						<h3>Additional Publications</h3>
+						<ul>										
+							<li>Karcher, S.C.; Willighagen, E.L.; Rumble, J.; Ehrhart, F.; Evelo, C.T.; Fritts, M.; Gaheen, S.; Harper, S.L.; Hoover, M.D.; Jeliazkova, N.; Lewinski, N.; Robinson, R.L.M.; Mills, K.C.; Mustad, A.P.; Thomas, D.G.; Tsiliki, G.; Hendren, C.O.; (2018) "Integration among Databases and Data Sets to Support Productive Nanotechnology: Challenges and Recommendations" NanoImpact 9: 85-101.</li>				
+							
+							<li>Karcher, S.C.; VanBriesen, J.M.; Nietch, C.T. (2013) "Alternative land use layer for
+							spatially-informed watershed management decision-making using SWAT" ASCE Journal of Environmental Engineering 139(12): 1413–1423.</li>	
+							
+							<li>Karcher, S.C.; VanBriesen, J.M.; Nietch, C.T. (March 2012) "Assessing the Challenges Associated with Developing an Integrated Modeling Approach for Predicting and Managing Water Quality and Quantity from the Watershed through the Drinking Water Treatment System" EPA/600/R-12/030.</li>	
+							
+							<li>Karcher, S.C., VanBriesen, J.M., and Small, M.J (2007) "Numerical Method to Elucidate Likely Target Positions of Chlorine Removal in Anaerobic Sediments Undergoing Polychlorinated Biphenyl Dechlorination" ASCE Journal of Environmental Engineering, 133(3): 278-286.</li>	
+							
+							<li>Karcher, S.C., Small, M.J., and VanBriesen, J.M., (2004) "Statistical Method to Evaluate the Occurrence of PCB Transformations in River Sediments with Application to Hudson River Data" Environmental Science and Technology 38:6760-6766.</li>	
+							
+							<li>Ph.D. Thesis: "Statistical Method for Polychlorinated Biphenyl Dechlorination Modeling and Pathway Analysis", 2005.</li>	
+							
+							<li>Contributor to "Sustainable Water Innovation Initiative for Southwestern Pennsylvania" a report of the Water Innovation Consortia Planning Committee September 2012 (http://www.pittsburghwed.com/resources/index.html; accessed June 30, 2013).</li>	
+							
+							<li>Contributor to "Living in the Water Environment: the WATERS Network Science Plan" Prepared for review by the National Science Foundation and the National Research Council in May 2009.</li>					
+						</ul>
+					</div>
+				</div>
+			</div>	
+			<br><br><br><br><br><br><br>		
+		</div>
+	</body>	
+</html>
+
+<!-- In decide to do includes -->
+<!-- https://www.tutorialspoint.com/how-to-include-another-html-file-in-an-html-file#:~:text=Place%20both%20files%20in%20the,it%20inside%20the%20wrapper%20DOM -->

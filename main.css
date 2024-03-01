@@ -1,10 +1,13 @@
 /* one offs */
 .section {
-	height: 80px !important; 
+	height: 40px !important; 
 	margin: 0;
 }
 .btn-center {
 	text-align: center;
+}
+.text-left {
+	text-align: left !important;
 }
 .left-block h1 {
 	color: rgb(27, 27, 27);
@@ -29,6 +32,10 @@
 	padding-left: 3%;
 	padding-right: 3%;
 }
+.extra-right-margin {
+	margin-right: 3px;
+}
+/* note that, these are in the very top left for each section (under the picture on the navbar) */
 .tiny-row {
 	color:  #f7f3e1;
 	background-color: none;
@@ -59,7 +66,7 @@ footer {
 	flex: 0 0 auto;
 	background-color: rgb(27, 27, 27);
 	color: #f7f3e1;
-	padding: 20px 30px 20px;	  
+	padding: 10px 20px 10px 10px;	  
 	line-height: 1.5;
 	text-align: center;
 }
@@ -75,6 +82,11 @@ footer a {
 footer a:hover {
 	color: #69e5f3;
 	font-weight: 800;
+}
+.footer-copyright {
+	color: #959696;
+	padding-top: 7px;
+	font-size: .9rem;
 }
 
 body {
@@ -104,21 +116,27 @@ body {
 	width: 250px;
 	background-color: rgb(27, 27, 27);
 	color: #f7f3e1;
-	text-align: center;
+	/* text-align: center; */
+	text-align: left;
 	border-radius: 6px;
 	padding: 5px 5px;
-	font-size: 12pt;
-	font-weight: 150;
+	font-size: 11pt;
+	font-weight: 110;
 	line-height: 1.1;  
 	/* Position the tooltip */
 	position: absolute;
 	z-index: 1;
 	top: 100%;
-	left: 5%;
-	margin-left: -215px;
+	/* left: 5%; */
+	/* margin-left: -215px; */
+	margin-left: -110px;
 }  
 .tooltip2:hover .tooltip2-text {
 	visibility: visible;
+}
+.tooltip2-wider {
+	padding: 2px 2px 2px 8px;
+	margin: 3px;
 }
 
 /* using navbar instead of sidebar */
@@ -131,6 +149,7 @@ body {
 
 	/* this makes the navbar, when mobile, not offset correctly */
 	position: fixed; 
+	/* overflow:auto; */
 }
 .nav-link, .navbar-brand {
 	color: #50a1f7;
@@ -138,7 +157,7 @@ body {
 }
 .nav-link {
 	/* margin-right: 1em !important; */
-	font-size: 1.1rem;
+	font-size: 1.3rem;
 	font-weight:500;
 }
 .nav-link:hover {
@@ -151,6 +170,9 @@ body {
 .navbar a.active {
 	/* background-color: #161449; */
 	color: #f7f3e1;
+}
+.nav-menu {
+	justify-content: center;
 }
 
 .container {
@@ -169,6 +191,11 @@ body {
 	font-size: 160%;
 	margin-top: 5px;
 }
+.center-block h2 {
+	color: rgb(27, 27, 27);
+	font-size: 130%;
+	margin-top: 5px;
+}
 .center-block h3 {
 	color: rgb(27, 27, 27);
 	font-size: 110%;
@@ -178,6 +205,14 @@ body {
 .center-block p {
 	color: rgb(27, 27, 27);
 	font-size: 100%;
+}
+.center-block a {
+	color: #50a1f7;
+	font-weight:500;
+}
+.center-block a:hover {
+	color: #69e5f3;
+	font-weight: 800;
 }
 
 /*--- feature is a custom container class designed for 3 columns (but could be more or less) ---*/

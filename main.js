@@ -2,8 +2,7 @@ $(document).ready(function(){
   
     // get the list of list of skills 
     // these come from running the csvtojson.py file, then cut and paste in here
-    const dataSet = [['Cloud Computing', 'AWS Cognito', 'Intermediate', '2024'], ['Cloud Computing', 'AWS EC2', 'Advanced', '2024'], ['Cloud Computing', 'AWS Elastic Beanstalk', 'Intermediate', '2024'], ['Cloud Computing', 'AWS RDS', 'Advanced', '2024'], ['Cloud Computing', 'AWS S3', 'Advanced', '2024'], ['Collaboration', 'Confluence', 'Advanced', '2024'], ['Collaboration', 'Jira', 'Advanced', '2024'], ['Collaboration', 'Microsoft SharePoint', 'Advanced', '2023'], ['Collaboration', 'Microsoft Teams', 'Advanced', '2023'], ['Collaboration', 'Slack', 'Advanced', '2024'], ['Collaboration', 'Webex', 'Advanced', '2020'], ['Collaboration', 'Zoom', 'Advanced', '2024'], ['Database', 'Microsoft Access', 'Advanced', '2015'], ['Database', 'MySQL', 'Advanced', '2016'], ['Database', 'PostgreSQL', 'Advanced', '2024'], ['Database Tools', 'DbVisualizer', 'Advanced', '2024'], ['Database Tools', 'MySQL', 'Advanced', '2016'], ['Database Tools', 'MySQL Workbench', 'Advanced', '2016'], ['Database Tools', 'Tableau', 'Intermediate', '2019'], ['Database Tools', 'dBeaver', 'Intermediate', '2022'], ['Database Tools', 'pgAdmin', 'Advanced', '2024'], ['Development Tools', 'Atom', 'Intermediate', '2019'], ['Development Tools', 'Jupyter Notebook', 'Advanced', '2023'], ['Development Tools', 'Notepad++', 'Advanced', '2024'], ['Development Tools', 'PyCharm', 'Advanced', '2024'], ['Development Tools', 'Rstudio', 'Advanced', '2020'], ['Development Tools', 'Visual Studio Code', 'Advanced', '2024'], ['Genomics', ' Ensembl BioMart', 'Intermediate', '2022'], ['Genomics', ' FDA Adverse Event Reporting System (FAERS)', 'Intermediate', '2022'], ['Genomics', ' Gene Expression Omnibus (GEO)', 'Intermediate', '2022'], ['Genomics', ' Genome-wide Association Studies (GWAS) Catalog', 'Intermediate', '2022'], ['Genomics', ' Human Genome Organization (HUGO)', 'Intermediate', '2022'], ['Genomics', ' Kyoto Encyclopedia of Genes and Genomes (KEGG)', 'Beginner', '2022'], ['Genomics', ' National Center for Biotechnology Information (NCBI)', 'Beginner', '2022'], ['Genomics', ' Rat Genome Database (RGD)', 'Beginner', '2022'], ['Genomics', 'Cytoscape', 'Intermediate', '2022'], ['Geographic', 'ArcGIS', 'Advanced', '2014'], ['Interoperability', 'Fast Health Interoperability Resources (FHIR)', 'Beginner', '2022'], ['Interoperability', 'Protege', 'Beginner', '2022'], ['Interoperability', 'Web Ontology Language (OWL)', 'Intermediate', '2022'], ['Languages/Frameworks', 'C++', 'Intermediate', '2000'], ['Languages/Frameworks', 'CSS', 'Advanced', '2024'], ['Languages/Frameworks', 'D3', 'Intermediate', '2016'], ['Languages/Frameworks', 'Django', 'Advanced', '2024'], ['Languages/Frameworks', 'HTML', 'Advanced', '2024'], ['Languages/Frameworks', 'Java', 'Intermediate', '2022'], ['Languages/Frameworks', 'JavaScript', 'Advanced', '2024'], ['Languages/Frameworks', 'Python', 'Advanced', '2024'], ['Languages/Frameworks', 'R', 'Intermediate', '2021'], ['Languages/Frameworks', 'jQuery', 'Intermediate', '2024'], ['Office Suite', 'LibreOffice', 'Intermediate', '2023'], ['Office Suite', 'Microsoft Office', 'Advanced', '2024'], ['Operating Systems', 'Linux', 'Advanced', '2024'], ['Operating Systems', 'Mac', 'Intermediate', '2023'], ['Operating Systems', 'Windows', 'Advanced', '2024'], ['Presentation Tools', ' Adobe Premiere Elements', 'Advanced', '2022'], ['Presentation Tools', ' Inkscape', 'Beginner', '2020'], ['Presentation Tools', ' Lucidchart', 'Beginner', '2024'], ['Presentation Tools', ' PowerPoint', 'Advanced', '2024'], ['Presentation Tools', ' iMovie', 'Advanced', '2016'], ['Presentation Tools', ' iPhoto', 'Advanced', '2000'], ['Presentation Tools', 'Adobe Photoshop', 'Advanced', '2024'], ['Reference Management', 'Endnote', 'Advanced', '2017'], ['Reference Management', 'Sciwheel', 'Intermediate', '2023'], ['Software as a Service (SaaS)', 'Terraform', 'Beginner', '2024'], ['Version Control', 'Bitbucket', 'Intermediate', '2016'], ['Version Control', 'Git', 'Advanced', '2024'], ['Version Control', 'GitHub', 'Advanced', '2024']]
-    ;
+    const dataSet = [['Cloud Computing', 'AWS Cognito', 'Intermediate', '2024'], ['Cloud Computing', 'AWS Command Line Interface (CLI)', 'Intermediate', '2024'], ['Cloud Computing', 'AWS EC2', 'Advanced', '2024'], ['Cloud Computing', 'AWS Elastic Beanstalk', 'Intermediate', '2024'], ['Cloud Computing', 'AWS RDS', 'Advanced', '2024'], ['Cloud Computing', 'AWS S3', 'Advanced', '2024'], ['Collaboration', 'Confluence', 'Advanced', '2024'], ['Collaboration', 'Jira', 'Advanced', '2024'], ['Collaboration', 'Microsoft SharePoint', 'Advanced', '2023'], ['Collaboration', 'Microsoft Teams', 'Advanced', '2023'], ['Collaboration', 'Slack', 'Advanced', '2024'], ['Collaboration', 'Webex', 'Advanced', '2020'], ['Collaboration', 'Zoom', 'Advanced', '2024'], ['Database', 'Microsoft Access', 'Advanced', '2015'], ['Database', 'MySQL', 'Advanced', '2016'], ['Database', 'PostgreSQL', 'Advanced', '2024'], ['Database Tools', 'DbVisualizer', 'Advanced', '2024'], ['Database Tools', 'MySQL Workbench', 'Advanced', '2016'], ['Database Tools', 'Tableau', 'Intermediate', '2019'], ['Database Tools', 'dBeaver', 'Intermediate', '2022'], ['Database Tools', 'pgAdmin', 'Advanced', '2024'], ['Development Tools', 'Atom', 'Intermediate', '2019'], ['Development Tools', 'Jupyter Notebook', 'Advanced', '2023'], ['Development Tools', 'Notepad++', 'Advanced', '2024'], ['Development Tools', 'PyCharm', 'Advanced', '2024'], ['Development Tools', 'Rstudio', 'Advanced', '2020'], ['Development Tools', 'Visual Studio Code', 'Advanced', '2024'], ['Genomics', 'Cytoscape', 'Intermediate', '2022'], ['Genomics', 'Ensembl BioMart', 'Intermediate', '2022'], ['Genomics', 'FDA Adverse Event Reporting System (FAERS)', 'Intermediate', '2022'], ['Genomics', 'Gene Expression Omnibus (GEO)', 'Intermediate', '2022'], ['Genomics', 'Genome-wide Association Studies (GWAS) Catalog', 'Intermediate', '2022'], ['Genomics', 'Human Genome Organization (HUGO)', 'Intermediate', '2022'], ['Genomics', 'Kyoto Encyclopedia of Genes and Genomes (KEGG)', 'Beginner', '2022'], ['Genomics', 'National Center for Biotechnology Information (NCBI)', 'Beginner', '2022'], ['Genomics', 'Rat Genome Database (RGD)', 'Beginner', '2022'], ['Geographic', 'ArcGIS', 'Advanced', '2014'], ['Interoperability', 'Fast Health Interoperability Resources (FHIR)', 'Beginner', '2022'], ['Interoperability', 'Protege', 'Beginner', '2022'], ['Interoperability', 'Web Ontology Language (OWL)', 'Intermediate', '2022'], ['Languages/Frameworks', 'C++', 'Intermediate', '2000'], ['Languages/Frameworks', 'CSS', 'Advanced', '2024'], ['Languages/Frameworks', 'D3', 'Intermediate', '2016'], ['Languages/Frameworks', 'Django', 'Advanced', '2024'], ['Languages/Frameworks', 'HTML', 'Advanced', '2024'], ['Languages/Frameworks', 'Java', 'Intermediate', '2022'], ['Languages/Frameworks', 'JavaScript', 'Advanced', '2024'], ['Languages/Frameworks', 'Python', 'Advanced', '2024'], ['Languages/Frameworks', 'R', 'Intermediate', '2021'], ['Languages/Frameworks', 'jQuery', 'Intermediate', '2024'], ['Office Suite', 'LibreOffice', 'Intermediate', '2023'], ['Office Suite', 'Microsoft Office', 'Advanced', '2024'], ['Operating Systems', 'Linux', 'Advanced', '2024'], ['Operating Systems', 'Mac', 'Intermediate', '2023'], ['Operating Systems', 'Windows', 'Advanced', '2024'], ['Presentation Tools', ' Adobe Premiere Elements', 'Advanced', '2022'], ['Presentation Tools', ' Inkscape', 'Beginner', '2020'], ['Presentation Tools', ' Lucidchart', 'Beginner', '2024'], ['Presentation Tools', ' PowerPoint', 'Advanced', '2024'], ['Presentation Tools', ' iMovie', 'Advanced', '2016'], ['Presentation Tools', ' iPhoto', 'Advanced', '2000'], ['Presentation Tools', 'Adobe Photoshop', 'Advanced', '2024'], ['Reference Management', 'Endnote', 'Advanced', '2017'], ['Reference Management', 'Sciwheel', 'Intermediate', '2023'], ['Software as a Service (SaaS)', 'Terraform', 'Beginner', '2024'], ['Version Control', 'Bitbucket', 'Intermediate', '2016'], ['Version Control', 'Git', 'Advanced', '2024'], ['Version Control', 'GitHub', 'Advanced', '2024']];
 
     const dom_outer_ids = ['home', 'about', 'skill', 'education', 'certification', 'experience', 'publication']
     let outer_elements = dom_outer_ids.map(function(id) {
@@ -12,9 +11,75 @@ $(document).ready(function(){
 
     const dom_nav_ids = ['#home_nav', '#about_nav', '#skill_nav', '#education_nav', '#certification_nav', '#experience_nav', '#publication_nav', '#expand_nav', '#close_nav', '#print_nav'];    
 
+    // from https://datatables.net/examples/data_sources/js_array.html
+    let category_tool_string_list = []
+    let category = ''
+    let tool_string = ''
+    let prev_category = dataSet[0][0]   
+    dataSet.forEach(r => {
+        // for the skill list
+        category = r[0]
+        if (category === prev_category) {
+            if (tool_string === '') {
+                tool_string = r[1]
+            } else {
+                tool_string = tool_string + ', ' + r[1]
+            }
+        } else {
+            category_tool_string_list.push(prev_category + ': ' + tool_string )
+            tool_string = r[1]
+        }
+        prev_category = r[0]
+       
+        // for the data table - do this last
+        let div1 = document.createElement('div');
+        div1.innerHTML = r[1];
+        r[1] = div1;
+        let div3 = document.createElement('div');
+        div3.innerHTML = r[3];
+        r[3] = div3;
+    })    
+    // get the last category
+    category_tool_string_list.push(prev_category + ': ' + tool_string )
+
+    let list = document.getElementById('skills_list')    
+    category_tool_string_list.forEach((item) => {
+        let li = document.createElement('li');
+        li.innerText = item;
+        list.appendChild(li);
+    })    
+
+    new DataTable('#skills_data_table', {
+        'iDisplayLength': 10,
+        'order': [[0, 'asc'], [1, 'asc']],
+        columns: [
+            { title: 'Category' },
+            { title: 'Application/Tool' },
+            { title: 'Skill Level' },
+            { title: 'Last Used' }
+        ],
+        columnDefs: [
+            { width: '28%', targets: 0 },
+            { width: '40%', targets: 1 },
+            { width: '18%', targets: 2 },
+            { width: '14%', targets: 3 }
+        ], 
+        data: dataSet
+    });
+
+    // for the dataTable to load correctly, it must be visible, so, make sure it is created before hiding sections
     // on open, close all except the active one, which is the home_nav
     expand_or_close_prepare('home_nav');
-      
+
+    // end on load section
+
+
+    // events
+    $(document).on('click', '.div-collapsible', function() {
+        $(this).blur();
+        change_display(this.nextElementSibling, 't');
+    });
+     
     document.getElementById('navbar').addEventListener('click', function(e) {
         i = 0
         while (i < dom_nav_ids.length) {
@@ -23,8 +88,25 @@ $(document).ready(function(){
         };       
         $(e.target).addClass('active');
         expand_or_close_prepare(e.target.id);
+        
+        // console.log('e.target.id--', e.target.id, '--') 
+        // if none of the outer sections are showing (which can happen when the hamburger menu is selected the second time) turn About page visible
+        // this changes the class, but it does not make the home content actually display or recolor the Home link on the navbar
+        // var ham = e.target.id.replace('_nav', '');
+        // if (dom_outer_ids.includes(ham)) {           
+        // } else {
+        //     console.log('not in ham')
+        //     var element = document.getElementById('home_nav');
+        //     var content = element;               
+        //     $(content)['addClass']('active');
+        //     var element = document.getElementById('home');
+        //     var content = element;               
+        //     $(content)['removeClass']('d-none');
+        // }              
     });
 
+        
+    // functions
     function expand_or_close_prepare(target_id) {   
         // console.log('target_id', target_id)     
         // have to open in order so all can be accessed
@@ -110,61 +192,6 @@ $(document).ready(function(){
             } 
         }
     }
-    
-    // from https://datatables.net/examples/data_sources/js_array.html
-    let category_tool_string_list = []
-    let category = ''
-    let tool_string = ''
-    let prev_category = dataSet[0][0]   
-    dataSet.forEach(r => {
-        // for the skill list
-        category = r[0]
-        if (category === prev_category) {
-            if (tool_string === '') {
-                tool_string = r[1]
-            } else {
-                tool_string = tool_string + ', ' + r[1]
-            }
-        } else {
-            category_tool_string_list.push(prev_category + ': ' + tool_string )
-            tool_string = r[1]
-        }
-        prev_category = r[0]
-       
-        // for the data table - do this last
-        let div1 = document.createElement('div');
-        div1.innerHTML = r[1];
-        r[1] = div1;
-        let div3 = document.createElement('div');
-        div3.innerHTML = r[3];
-        r[3] = div3;
-    })    
-    // get the last category
-    category_tool_string_list.push(prev_category + ': ' + tool_string )
-
-    let list = document.getElementById('skills_list')    
-    category_tool_string_list.forEach((item) => {
-        let li = document.createElement('li');
-        li.innerText = item;
-        list.appendChild(li);
-    })    
-
-    new DataTable('#skills_data_table', {
-        'iDisplayLength': 10,
-        'order': [[0, 'asc'], [1, 'asc']],
-        columns: [
-            { title: 'Category' },
-            { title: 'Application/Tool' },
-            { title: 'Skill Level' },
-            { title: 'Last Used' }
-        ],
-        data: dataSet
-    });
-
-    $(document).on('click', '.div-collapsible', function() {
-        $(this).blur();
-        change_display(this.nextElementSibling, 't');
-    });
 
     function change_display(content, what_doing) {
         // console.log('content '+content)

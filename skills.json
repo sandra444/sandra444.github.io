@@ -9,121 +9,121 @@
     {
         "Id": "2",
         "Category": "Cloud Computing",
+        "Application/Tool": "AWS Command Line Interface (CLI)",
+        "Skill Level": "Intermediate",
+        "Last Used": "2024"
+    },
+    {
+        "Id": "3",
+        "Category": "Cloud Computing",
         "Application/Tool": "AWS EC2",
         "Skill Level": "Advanced",
         "Last Used": "2024"
     },
     {
-        "Id": "3",
+        "Id": "4",
         "Category": "Cloud Computing",
         "Application/Tool": "AWS Elastic Beanstalk",
         "Skill Level": "Intermediate",
         "Last Used": "2024"
     },
     {
-        "Id": "4",
+        "Id": "5",
         "Category": "Cloud Computing",
         "Application/Tool": "AWS RDS",
         "Skill Level": "Advanced",
         "Last Used": "2024"
     },
     {
-        "Id": "5",
+        "Id": "6",
         "Category": "Cloud Computing",
         "Application/Tool": "AWS S3",
         "Skill Level": "Advanced",
         "Last Used": "2024"
     },
     {
-        "Id": "6",
+        "Id": "7",
         "Category": "Collaboration",
         "Application/Tool": "Confluence",
         "Skill Level": "Advanced",
         "Last Used": "2024"
     },
     {
-        "Id": "7",
+        "Id": "8",
         "Category": "Collaboration",
         "Application/Tool": "Jira",
         "Skill Level": "Advanced",
         "Last Used": "2024"
     },
     {
-        "Id": "8",
+        "Id": "9",
         "Category": "Collaboration",
         "Application/Tool": "Microsoft SharePoint",
         "Skill Level": "Advanced",
         "Last Used": "2023"
     },
     {
-        "Id": "9",
+        "Id": "10",
         "Category": "Collaboration",
         "Application/Tool": "Microsoft Teams",
         "Skill Level": "Advanced",
         "Last Used": "2023"
     },
     {
-        "Id": "10",
+        "Id": "11",
         "Category": "Collaboration",
         "Application/Tool": "Slack",
         "Skill Level": "Advanced",
         "Last Used": "2024"
     },
     {
-        "Id": "11",
+        "Id": "12",
         "Category": "Collaboration",
         "Application/Tool": "Webex",
         "Skill Level": "Advanced",
         "Last Used": "2020"
     },
     {
-        "Id": "12",
+        "Id": "13",
         "Category": "Collaboration",
         "Application/Tool": "Zoom",
         "Skill Level": "Advanced",
         "Last Used": "2024"
     },
     {
-        "Id": "13",
+        "Id": "14",
         "Category": "Database",
         "Application/Tool": "Microsoft Access",
         "Skill Level": "Advanced",
         "Last Used": "2015"
     },
     {
-        "Id": "14",
+        "Id": "15",
         "Category": "Database",
         "Application/Tool": "MySQL",
         "Skill Level": "Advanced",
         "Last Used": "2016"
     },
     {
-        "Id": "15",
+        "Id": "16",
         "Category": "Database",
         "Application/Tool": "PostgreSQL",
         "Skill Level": "Advanced",
         "Last Used": "2024"
     },
     {
-        "Id": "16",
+        "Id": "17",
         "Category": "Database Tools",
         "Application/Tool": "dBeaver",
         "Skill Level": "Intermediate",
         "Last Used": "2022"
     },
     {
-        "Id": "17",
+        "Id": "18",
         "Category": "Database Tools",
         "Application/Tool": "DbVisualizer",
         "Skill Level": "Advanced",
         "Last Used": "2024"
-    },
-    {
-        "Id": "18",
-        "Category": "Database Tools",
-        "Application/Tool": "MySQL",
-        "Skill Level": "Advanced",
-        "Last Used": "2016"
     },
     {
         "Id": "19",
@@ -191,64 +191,64 @@
     {
         "Id": "28",
         "Category": "Genomics",
-        "Application/Tool": " Ensembl BioMart",
+        "Application/Tool": "Cytoscape",
         "Skill Level": "Intermediate",
         "Last Used": "2022"
     },
     {
         "Id": "29",
         "Category": "Genomics",
-        "Application/Tool": " FDA Adverse Event Reporting System (FAERS)",
+        "Application/Tool": "Ensembl BioMart",
         "Skill Level": "Intermediate",
         "Last Used": "2022"
     },
     {
         "Id": "30",
         "Category": "Genomics",
-        "Application/Tool": " Gene Expression Omnibus (GEO)",
+        "Application/Tool": "FDA Adverse Event Reporting System (FAERS)",
         "Skill Level": "Intermediate",
         "Last Used": "2022"
     },
     {
         "Id": "31",
         "Category": "Genomics",
-        "Application/Tool": " Genome-wide Association Studies (GWAS) Catalog",
+        "Application/Tool": "Gene Expression Omnibus (GEO)",
         "Skill Level": "Intermediate",
         "Last Used": "2022"
     },
     {
         "Id": "32",
         "Category": "Genomics",
-        "Application/Tool": " Human Genome Organization (HUGO)",
+        "Application/Tool": "Genome-wide Association Studies (GWAS) Catalog",
         "Skill Level": "Intermediate",
         "Last Used": "2022"
     },
     {
         "Id": "33",
         "Category": "Genomics",
-        "Application/Tool": " Kyoto Encyclopedia of Genes and Genomes (KEGG)",
-        "Skill Level": "Beginner",
+        "Application/Tool": "Human Genome Organization (HUGO)",
+        "Skill Level": "Intermediate",
         "Last Used": "2022"
     },
     {
         "Id": "34",
         "Category": "Genomics",
-        "Application/Tool": " National Center for Biotechnology Information (NCBI)",
+        "Application/Tool": "Kyoto Encyclopedia of Genes and Genomes (KEGG)",
         "Skill Level": "Beginner",
         "Last Used": "2022"
     },
     {
         "Id": "35",
         "Category": "Genomics",
-        "Application/Tool": " Rat Genome Database (RGD)",
+        "Application/Tool": "National Center for Biotechnology Information (NCBI)",
         "Skill Level": "Beginner",
         "Last Used": "2022"
     },
     {
         "Id": "36",
         "Category": "Genomics",
-        "Application/Tool": "Cytoscape",
-        "Skill Level": "Intermediate",
+        "Application/Tool": "Rat Genome Database (RGD)",
+        "Skill Level": "Beginner",
         "Last Used": "2022"
     },
     {

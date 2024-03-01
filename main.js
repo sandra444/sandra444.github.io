@@ -4,7 +4,7 @@ $(document).ready(function(){
     // these come from running the csvtojson.py file, then cut and paste in here
     const dataSet = [['Cloud Computing', 'AWS Cognito', 'Intermediate', '2024'], ['Cloud Computing', 'AWS Command Line Interface (CLI)', 'Intermediate', '2024'], ['Cloud Computing', 'AWS EC2', 'Advanced', '2024'], ['Cloud Computing', 'AWS Elastic Beanstalk', 'Intermediate', '2024'], ['Cloud Computing', 'AWS RDS', 'Advanced', '2024'], ['Cloud Computing', 'AWS S3', 'Advanced', '2024'], ['Collaboration', 'Confluence', 'Advanced', '2024'], ['Collaboration', 'Jira', 'Advanced', '2024'], ['Collaboration', 'Microsoft SharePoint', 'Advanced', '2023'], ['Collaboration', 'Microsoft Teams', 'Advanced', '2023'], ['Collaboration', 'Slack', 'Advanced', '2024'], ['Collaboration', 'Webex', 'Advanced', '2020'], ['Collaboration', 'Zoom', 'Advanced', '2024'], ['Database', 'Microsoft Access', 'Advanced', '2015'], ['Database', 'MySQL', 'Advanced', '2016'], ['Database', 'PostgreSQL', 'Advanced', '2024'], ['Database Tools', 'DbVisualizer', 'Advanced', '2024'], ['Database Tools', 'MySQL Workbench', 'Advanced', '2016'], ['Database Tools', 'Tableau', 'Intermediate', '2019'], ['Database Tools', 'dBeaver', 'Intermediate', '2022'], ['Database Tools', 'pgAdmin', 'Advanced', '2024'], ['Development Tools', 'Atom', 'Intermediate', '2019'], ['Development Tools', 'Jupyter Notebook', 'Advanced', '2023'], ['Development Tools', 'Notepad++', 'Advanced', '2024'], ['Development Tools', 'PyCharm', 'Advanced', '2024'], ['Development Tools', 'Rstudio', 'Advanced', '2020'], ['Development Tools', 'Visual Studio Code', 'Advanced', '2024'], ['Genomics', 'Cytoscape', 'Intermediate', '2022'], ['Genomics', 'Ensembl BioMart', 'Intermediate', '2022'], ['Genomics', 'FDA Adverse Event Reporting System (FAERS)', 'Intermediate', '2022'], ['Genomics', 'Gene Expression Omnibus (GEO)', 'Intermediate', '2022'], ['Genomics', 'Genome-wide Association Studies (GWAS) Catalog', 'Intermediate', '2022'], ['Genomics', 'Human Genome Organization (HUGO)', 'Intermediate', '2022'], ['Genomics', 'Kyoto Encyclopedia of Genes and Genomes (KEGG)', 'Beginner', '2022'], ['Genomics', 'National Center for Biotechnology Information (NCBI)', 'Beginner', '2022'], ['Genomics', 'Rat Genome Database (RGD)', 'Beginner', '2022'], ['Geographic', 'ArcGIS', 'Advanced', '2014'], ['Interoperability', 'Fast Health Interoperability Resources (FHIR)', 'Beginner', '2022'], ['Interoperability', 'Protege', 'Beginner', '2022'], ['Interoperability', 'Web Ontology Language (OWL)', 'Intermediate', '2022'], ['Languages/Frameworks', 'C++', 'Intermediate', '2000'], ['Languages/Frameworks', 'CSS', 'Intermediate', '2024'], ['Languages/Frameworks', 'D3', 'Intermediate', '2016'], ['Languages/Frameworks', 'Django', 'Advanced', '2024'], ['Languages/Frameworks', 'HTML', 'Advanced', '2024'], ['Languages/Frameworks', 'Java', 'Intermediate', '2022'], ['Languages/Frameworks', 'JavaScript', 'Advanced', '2024'], ['Languages/Frameworks', 'Python', 'Advanced', '2024'], ['Languages/Frameworks', 'R', 'Intermediate', '2021'], ['Languages/Frameworks', 'jQuery', 'Intermediate', '2024'], ['Office Suite', 'LibreOffice', 'Intermediate', '2023'], ['Office Suite', 'Microsoft Office', 'Advanced', '2024'], ['Operating Systems', 'Linux', 'Advanced', '2024'], ['Operating Systems', 'Mac', 'Intermediate', '2023'], ['Operating Systems', 'Windows', 'Advanced', '2024'], ['Presentation Tools', ' Adobe Premiere Elements', 'Advanced', '2022'], ['Presentation Tools', ' Inkscape', 'Beginner', '2020'], ['Presentation Tools', ' Lucidchart', 'Beginner', '2024'], ['Presentation Tools', ' PowerPoint', 'Advanced', '2024'], ['Presentation Tools', ' iMovie', 'Advanced', '2016'], ['Presentation Tools', ' iPhoto', 'Advanced', '2000'], ['Presentation Tools', 'Adobe Photoshop', 'Advanced', '2024'], ['Reference Management', 'Endnote', 'Advanced', '2017'], ['Reference Management', 'Sciwheel', 'Intermediate', '2023'], ['Software as a Service (SaaS)', 'Terraform', 'Beginner', '2024'], ['Version Control', 'Bitbucket', 'Intermediate', '2016'], ['Version Control', 'Git', 'Advanced', '2024'], ['Version Control', 'GitHub', 'Advanced', '2024']];
 
-    const dom_outer_ids = ['home', 'about', 'skill', 'education', 'certification', 'experience', 'publication']
+    const dom_outer_ids = ['home', 'about', 'skill', 'education', 'certification', 'experience', 'publication', 'print']
     let outer_elements = dom_outer_ids.map(function(id) {
         return document.getElementById(id);
     })
@@ -70,11 +70,12 @@ $(document).ready(function(){
     // for the dataTable to load correctly, it must be visible, so, make sure it is created before hiding sections
     // on open, close all except the active one, which is the home_nav
     expand_or_close_prepare('home_nav');
-
+    
     // end on load section
 
 
-    // events
+    // events    
+
     $(document).on('click', '.div-collapsible', function() {
         $(this).blur();
         change_display(this.nextElementSibling, 't');
@@ -90,19 +91,16 @@ $(document).ready(function(){
         expand_or_close_prepare(e.target.id);
         
         // console.log('e.target.id--', e.target.id, '--') 
-        // if none of the outer sections are showing (which can happen when the hamburger menu is selected the second time) turn About page visible
+        // if none of the outer sections are showing (which can happen when the hamburger menu is selected the second time OR if the bar is clicked in a place with not navitem) turn About page visible
         // this changes the class, but it does not make the home content actually display or recolor the Home link on the navbar
-        // var ham = e.target.id.replace('_nav', '');
-        // if (dom_outer_ids.includes(ham)) {           
-        // } else {
-        //     console.log('not in ham')
-        //     var element = document.getElementById('home_nav');
-        //     var content = element;               
-        //     $(content)['addClass']('active');
-        //     var element = document.getElementById('home');
-        //     var content = element;               
-        //     $(content)['removeClass']('d-none');
-        // }              
+        var nav_bar_options_clicked = e.target.id.replace('_nav', '');
+        if (dom_outer_ids.includes(nav_bar_options_clicked)) {           
+        } else {
+            // console.log('nav_bar_options_clicked', nav_bar_options_clicked)
+            // Get the button element
+            var element_by_id = document.getElementById('home_nav');
+            simulateClick(element_by_id);
+        }              
     });
 
         
@@ -209,6 +207,16 @@ $(document).ready(function(){
             $(content).addClass('d-none');
             if_all_are_open_true = false;
         }
+    }
+
+      // Function to simulate a click event
+    function simulateClick(element_by_id) {
+        var clickEvent = new MouseEvent('click', {
+        bubbles: true,
+        cancelable: true,
+        view: window
+        });
+        element_by_id.dispatchEvent(clickEvent);
     }
 
 });

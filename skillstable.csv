@@ -1,22 +1,22 @@
 Id,Category,Application/Tool,Skill Level,Last Used
 1,Cloud Computing,AWS Cognito,Intermediate,2024
-2,Cloud Computing,AWS EC2,Advanced,2024
-3,Cloud Computing,AWS Elastic Beanstalk,Intermediate,2024
-4,Cloud Computing,AWS RDS,Advanced,2024
-5,Cloud Computing,AWS S3,Advanced,2024
-6,Collaboration,Confluence,Advanced,2024
-7,Collaboration,Jira,Advanced,2024
-8,Collaboration,Microsoft SharePoint,Advanced,2023
-9,Collaboration,Microsoft Teams,Advanced,2023
-10,Collaboration,Slack,Advanced,2024
-11,Collaboration,Webex,Advanced,2020
-12,Collaboration,Zoom,Advanced,2024
-13,Database,Microsoft Access,Advanced,2015
-14,Database,MySQL,Advanced,2016
-15,Database,PostgreSQL,Advanced,2024
-16,Database Tools,dBeaver,Intermediate,2022
-17,Database Tools,DbVisualizer,Advanced,2024
-18,Database Tools,MySQL,Advanced,2016
+2,Cloud Computing,AWS Command Line Interface (CLI),Intermediate,2024
+3,Cloud Computing,AWS EC2,Advanced,2024
+4,Cloud Computing,AWS Elastic Beanstalk,Intermediate,2024
+5,Cloud Computing,AWS RDS,Advanced,2024
+6,Cloud Computing,AWS S3,Advanced,2024
+7,Collaboration,Confluence,Advanced,2024
+8,Collaboration,Jira,Advanced,2024
+9,Collaboration,Microsoft SharePoint,Advanced,2023
+10,Collaboration,Microsoft Teams,Advanced,2023
+11,Collaboration,Slack,Advanced,2024
+12,Collaboration,Webex,Advanced,2020
+13,Collaboration,Zoom,Advanced,2024
+14,Database,Microsoft Access,Advanced,2015
+15,Database,MySQL,Advanced,2016
+16,Database,PostgreSQL,Advanced,2024
+17,Database Tools,dBeaver,Intermediate,2022
+18,Database Tools,DbVisualizer,Advanced,2024
 19,Database Tools,MySQL Workbench,Advanced,2016
 20,Database Tools,pgAdmin,Advanced,2024
 21,Database Tools,Tableau,Intermediate,2019
@@ -26,21 +26,21 @@ Id,Category,Application/Tool,Skill Level,Last Used
 25,Development Tools,PyCharm,Advanced,2024
 26,Development Tools,Rstudio,Advanced,2020
 27,Development Tools,Visual Studio Code,Advanced,2024
-28,Genomics, Ensembl BioMart,Intermediate,2022
-29,Genomics, FDA Adverse Event Reporting System (FAERS),Intermediate,2022
-30,Genomics, Gene Expression Omnibus (GEO),Intermediate,2022
-31,Genomics, Genome-wide Association Studies (GWAS) Catalog,Intermediate,2022
-32,Genomics, Human Genome Organization (HUGO),Intermediate,2022
-33,Genomics, Kyoto Encyclopedia of Genes and Genomes (KEGG),Beginner,2022
-34,Genomics, National Center for Biotechnology Information (NCBI),Beginner,2022
-35,Genomics, Rat Genome Database (RGD),Beginner,2022
-36,Genomics,Cytoscape,Intermediate,2022
+28,Genomics,Cytoscape,Intermediate,2022
+29,Genomics,Ensembl BioMart,Intermediate,2022
+30,Genomics,FDA Adverse Event Reporting System (FAERS),Intermediate,2022
+31,Genomics,Gene Expression Omnibus (GEO),Intermediate,2022
+32,Genomics,Genome-wide Association Studies (GWAS) Catalog,Intermediate,2022
+33,Genomics,Human Genome Organization (HUGO),Intermediate,2022
+34,Genomics,Kyoto Encyclopedia of Genes and Genomes (KEGG),Beginner,2022
+35,Genomics,National Center for Biotechnology Information (NCBI),Beginner,2022
+36,Genomics,Rat Genome Database (RGD),Beginner,2022
 37,Geographic,ArcGIS,Advanced,2014
 38,Interoperability,Fast Health Interoperability Resources (FHIR),Beginner,2022
 39,Interoperability,Protege,Beginner,2022
 40,Interoperability,Web Ontology Language (OWL),Intermediate,2022
 41,Languages/Frameworks,C++,Intermediate,2000
-42,Languages/Frameworks,CSS,Advanced,2024
+42,Languages/Frameworks,CSS,Intermediate,2024
 43,Languages/Frameworks,D3,Intermediate,2016
 44,Languages/Frameworks,Django,Advanced,2024
 45,Languages/Frameworks,HTML,Advanced,2024

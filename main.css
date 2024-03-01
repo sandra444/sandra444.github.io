@@ -1,6 +1,6 @@
 /* one offs */
 .section {
-	height: 40px !important; 
+	height: 50px !important; 
 	margin: 0;
 }
 .btn-center {
@@ -8,12 +8,6 @@
 }
 .text-left {
 	text-align: left !important;
-}
-.left-block h1 {
-	color: rgb(27, 27, 27);
-	font-size: 160%;
-	text-align: left;
-	margin-top: 5px;
 }
 .left-li {
 	font-weight: 100;
@@ -34,6 +28,12 @@
 }
 .extra-right-margin {
 	margin-right: 3px;
+}
+.extra-left-padding {
+	padding-left: 3%;
+}
+.extra-top-padding {
+	padding-top: 4%;
 }
 /* note that, these are in the very top left for each section (under the picture on the navbar) */
 .tiny-row {
@@ -77,13 +77,13 @@ footer h6 {
 }
 footer a {
 	color: #50a1f7;
-	font-weight:500;
+	font-weight:550;
 }
 footer a:hover {
 	color: #69e5f3;
-	font-weight: 800;
+	font-weight: 900;
 }
-.footer-copyright {
+.footer-copyright a {
 	color: #959696;
 	padding-top: 7px;
 	font-size: .9rem;
@@ -96,12 +96,12 @@ body {
 .btn {
 	background-color: rgb(27, 27, 27);
 	color: #50a1f7;
-	font-weight:500;
+	font-weight:570;
 }
 .btn:hover {
 	background-color: rgb(27, 27, 27);
 	color: #69e5f3;
-	font-weight: 800;
+	font-weight: 900;
 }
 
 /* to support tooltip for data table */
@@ -160,9 +160,14 @@ body {
 	font-size: 1.3rem;
 	font-weight:500;
 }
+.odd-nav-link {
+	font-weight:400 !important;
+	vertical-align: center;
+	color: #959696;
+}
 .nav-link:hover {
 	color: #69e5f3;
-	font-weight: 800;
+	font-weight: 900;
 }
 .navbar-collapse {
 	justify-content: flex-end;
@@ -207,12 +212,20 @@ body {
 	font-size: 100%;
 }
 .center-block a {
-	color: #50a1f7;
-	font-weight:500;
+	color: #0754a6;
+	font-weight:650;
 }
 .center-block a:hover {
-	color: #69e5f3;
-	font-weight: 800;
+	color: #60c6f5;
+	font-weight: 900;
+}
+.left-block a {
+	color: #0754a6;
+	font-weight:650;
+}
+.left-block a:hover {
+	color: #60c6f5;
+	font-weight: 900;
 }
 
 /*--- feature is a custom container class designed for 3 columns (but could be more or less) ---*/
@@ -222,6 +235,15 @@ body {
 	position: relative;
 	text-align: center;
 }
+.features a {
+	color: #0754a6;
+	font-weight:650;
+}
+.features a:hover {
+	color: #60c6f5;
+	font-weight: 900;
+}
+
 .features-title {
 	color: rgb(27, 27, 27);
 	font-size: 1.1rem;

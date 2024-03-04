@@ -69,7 +69,7 @@ $(document).ready(function(){
 
     // for the dataTable to load correctly, it must be visible, so, make sure it is created before hiding sections
     // on open, close all except the active one, which is the home_nav
-    expand_or_close_prepare('home_nav');
+    expand_or_close_prepare('home_nav', 'load');
     
     // end on load section
 
@@ -88,15 +88,17 @@ $(document).ready(function(){
             i = i + 1;
         };       
         $(e.target).addClass('active');
-        expand_or_close_prepare(e.target.id);
+        expand_or_close_prepare(e.target.id, 'navbar_click');
         
         // console.log('e.target.id--', e.target.id, '--') 
         // if none of the outer sections are showing (which can happen when the hamburger menu is selected the second time OR if the bar is clicked in a place with not navitem) turn About page visible
         // this changes the class, but it does not make the home content actually display or recolor the Home link on the navbar
         var nav_bar_options_clicked = e.target.id.replace('_nav', '');
+        // console.log('nav_bar_options_clicked', nav_bar_options_clicked)
+        // console.log('dom_outer_ids', dom_outer_ids)
         if (dom_outer_ids.includes(nav_bar_options_clicked)) {           
+        } else if (nav_bar_options_clicked === 'expand' || nav_bar_options_clicked === 'close') {
         } else {
-            // console.log('nav_bar_options_clicked', nav_bar_options_clicked)
             // Get the button element
             var element_by_id = document.getElementById('home_nav');
             simulateClick(element_by_id);
@@ -105,35 +107,35 @@ $(document).ready(function(){
 
         
     // functions
-    function expand_or_close_prepare(target_id) {   
+    function expand_or_close_prepare(target_id, message1) {   
         // console.log('target_id', target_id)     
         // have to open in order so all can be accessed
-        expand_or_close('o', 'removeClass', 'd-none', 'outer_div', target_id);
-        // expand_or_close('p0', 'removeClass', 'd-none', 'no-print0', target_id);
-        expand_or_close('p1', 'removeClass', 'd-none', 'no-print1', target_id);
-        expand_or_close('p2', 'removeClass', 'd-none', 'no-print2', target_id);
-        expand_or_close('e', 'removeClass', 'd-none', 'div_button', target_id);
-        expand_or_close('e', 'removeClass', 'd-none', 'div_button', target_id);
+        expand_or_close('o', 'removeClass', 'd-none', 'outer_div', target_id, message1, '1');
+        expand_or_close('p1', 'removeClass', 'd-none', 'no-print1', target_id, message1, '2');
+        expand_or_close('p2', 'removeClass', 'd-none', 'no-print2', target_id, message1, '3');
+        expand_or_close('e', 'removeClass', 'd-none', 'div_button', target_id, message1, '4');
 
         if (target_id === 'expand_nav') {
         } else if (target_id === 'close_nav') {
-            expand_or_close('c', 'addClass', 'd-none', 'div_button', target_id);
+            expand_or_close('c', 'addClass', 'd-none', 'div_button', target_id, message1, '5c');
         } else if (target_id === 'print_nav') {
-            expand_or_close('p2', 'addClass', 'd-none', 'no-print2', target_id);
-            expand_or_close('p1', 'addClass', 'd-none', 'no-print1', target_id);
+            expand_or_close('p2', 'addClass', 'd-none', 'no-print2', target_id, message1, '5p2');
+            expand_or_close('p1', 'addClass', 'd-none', 'no-print1', target_id, message1, '5p1');
         } else {
-            // this will be one of the options other than the hidden ones (close, expand, expand some)
+            // this will be one of the options other than the hidden ones (close, expand, expand some, AND on load)
             // close all the button next sibling
-            expand_or_close('c', 'addClass', 'd-none', 'div_button', target_id);
+            expand_or_close('c', 'addClass', 'd-none', 'div_button', target_id, message1, '7');
             // open the button next sibling for the active nav
-            expand_or_close('a', 'removeClass', 'd-none', 'div_button', target_id);
+            expand_or_close('a', 'removeClass', 'd-none', 'div_button', target_id, message1, '8');
             // close the outer divs that are NOT the active ones
-            expand_or_close('n', 'addClass', 'd-none', 'outer_div', target_id);
+            expand_or_close('n', 'addClass', 'd-none', 'outer_div', target_id, message1, '9');
         }
+        // console.log('end _prepare')
     }
 
-    function expand_or_close(e_c_p, add_remove, change_class_name, find_name, target_id) {
+    function expand_or_close(e_c_p, add_remove, change_class_name, find_name, target_id, message1, message2) {
         var elements = null;
+        // console.log('target_id', target_id, message1, message2)  
         var main_section = target_id.replace('_nav', '');
            if (e_c_p === 'e' || e_c_p === 'c') {  
             // find_name is the "name" on a button 

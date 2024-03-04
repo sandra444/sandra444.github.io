@@ -100,6 +100,8 @@ body {
 	background-color: rgb(27, 27, 27);
 	color: #50a1f7;
 	font-weight:570;
+	margin-top: 3px;
+	margin-bottom: 10px;
 }
 .btn:hover {
 	background-color: rgb(27, 27, 27);
@@ -280,8 +282,8 @@ body {
 	padding-right: 10%;
 }
 .features .btn {
-	background-color: #589b37;
-	border: 1px solid #589b37;
+	background-color: #1e3483;
+	border: 1px solid #1e3483;
 	color: #fff;
 	margin-top: 20px;
 }

@@ -3,6 +3,9 @@
 	height: 60px !important; 
 	margin: 0;
 }
+.squish-row {
+	line-height: 90%;
+}
 .btn-center {
 	text-align: center;
 }
@@ -217,7 +220,8 @@ body {
 .center-block h2 {
 	color: rgb(27, 27, 27);
 	font-size: 130%;
-	margin-top: 5px;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 .center-block h3 {
 	color: rgb(27, 27, 27);
@@ -229,6 +233,7 @@ body {
 	color: rgb(27, 27, 27);
 	font-size: 100%;
 }
+/* if change these tow,  */
 .center-block a {
 	color: #0754a6;
 	font-weight:650;

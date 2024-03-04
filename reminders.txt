@@ -1,3 +1,5 @@
+Reminders for Sandra.
+
 Background to setting up the github website (following pages.github.com):
 Made a public repository with sandra444.github.io
 (base) C:\Users\sandr\Documents\sandra444>git clone https://github.com/sandra444/sandra444.github.io
@@ -19,7 +21,9 @@ To update my website:
 Update the skillstable.csv
 (base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>python csvtojson.py skillstable.csv (in Anaconda Prompt window)
 Copy the list of skills printed in the terminal into the main.js file
-(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>python -m http.server 8000 (in Anaconda3 prompt - http://localhost:8000/)
+(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>
+python -m http.server 8000 
+(in Anaconda3 prompt - http://localhost:8000/)
 
 Make any updates that are needed to the index.html file (and main.js, if needed)
 Update resume, save to docx and pdf
@@ -32,9 +36,11 @@ Confirm site is working locally
 (base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git push -u origin main
 Note: The -u is to --set-upstream (automatically link your local to your remote)
 
+Note: When using different GitHub users, windows saves credentials (settings, Windows Credentials). 
+May need to remove the git credentials and then, when try to push the next time, add back the correct one.
 
 
-Notes from exploration of how to do the website.
+SCK Reminder notes from exploration of what wanted to do with the website.
 
 Inspired by: https://websitesetup.org/bootstrap-tutorial-for-beginners/
 Keep the local ones but use the cdns for deployment

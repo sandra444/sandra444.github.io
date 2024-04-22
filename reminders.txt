@@ -33,7 +33,7 @@ Confirm site is working locally
 (base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git status
 
 (base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git commit -m "Website 20240219"
-(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git push -u origin main
+(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git push -u origin topbar20240228 (then, in git hub, send pull request to main)
 Note: The -u is to --set-upstream (automatically link your local to your remote)
 
 Note: When using different GitHub users, windows saves credentials (settings, Windows Credentials). 

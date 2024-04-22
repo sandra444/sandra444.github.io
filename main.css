@@ -89,7 +89,7 @@ footer a:hover {
 .footer-copyright a {
 	color: #959696;
 	padding-top: 7px;
-	font-size: .9rem;
+	font-size: .8rem;
 }
 
 body {
@@ -271,8 +271,8 @@ body {
 
 .features-title {
 	color: rgb(27, 27, 27);
-	font-size: 1.1rem;
-	font-weight: 700;
+	font-size: 1.0rem;
+	font-weight: 600;
 	margin-bottom: 5px;
 	/* text-transform: uppercase; */
 }

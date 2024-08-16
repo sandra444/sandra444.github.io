@@ -25,6 +25,9 @@
 	list-style-type: none;
 	line-height: 1.5;
 }
+.bullet_2 {
+	list-style-type: disc !important;
+}
 .extra-padding {
 	padding-left: 3%;
 	padding-right: 3%;

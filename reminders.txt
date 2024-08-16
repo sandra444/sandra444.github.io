@@ -8,6 +8,9 @@ Made a public repository with sandra444.github.io
 On branch main
 Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
+
+NOTE: 2024, cahnged location on Dell to C:\Users\Sandra Karcher\OneDrive\adell\repos\sandra444
+
 (base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>
 
 

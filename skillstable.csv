@@ -1,77 +1,88 @@
 Id,Category,Application/Tool,Skill Level,Last Used
 1,Cloud Computing,AWS Cognito,Intermediate,2024
 2,Cloud Computing,AWS Command Line Interface (CLI),Intermediate,2024
-3,Cloud Computing,AWS EC2,Advanced,2024
-4,Cloud Computing,AWS Elastic Beanstalk,Intermediate,2024
-5,Cloud Computing,AWS RDS,Advanced,2024
-6,Cloud Computing,AWS S3,Advanced,2024
-7,Collaboration,Confluence,Advanced,2024
-8,Collaboration,Jira,Advanced,2024
-9,Collaboration,Microsoft SharePoint,Advanced,2023
-10,Collaboration,Microsoft Teams,Advanced,2023
-11,Collaboration,Slack,Advanced,2024
-12,Collaboration,Webex,Advanced,2020
-13,Collaboration,Zoom,Advanced,2024
-14,Database,Microsoft Access,Advanced,2015
-15,Database,MySQL,Advanced,2016
-16,Database,PostgreSQL,Advanced,2024
-17,Database Tools,dBeaver,Intermediate,2022
-18,Database Tools,DbVisualizer,Advanced,2024
-19,Database Tools,MySQL Workbench,Advanced,2016
-20,Database Tools,pgAdmin,Advanced,2024
-21,Database Tools,Tableau (Desktop),Intermediate,2019
-22,Database Tools,Tableau Public,Intermediate,2024
-23,Development Tools,Atom,Intermediate,2019
-24,Development Tools,Jupyter Notebook,Advanced,2023
-25,Development Tools,Notepad++,Advanced,2024
-26,Development Tools,PyCharm,Advanced,2024
-27,Development Tools,Rstudio,Advanced,2020
-28,Development Tools,Visual Studio Code,Advanced,2024
-29,Genomics,Cytoscape,Intermediate,2022
-30,Genomics,Ensembl BioMart,Intermediate,2022
-31,Genomics,FDA Adverse Event Reporting System (FAERS),Intermediate,2022
-32,Genomics,Gene Expression Omnibus (GEO),Intermediate,2022
-33,Genomics,Genome-wide Association Studies (GWAS) Catalog,Intermediate,2022
-34,Genomics,Human Genome Organization (HUGO),Intermediate,2022
-35,Genomics,Kyoto Encyclopedia of Genes and Genomes (KEGG),Beginner,2022
-36,Genomics,National Center for Biotechnology Information (NCBI),Beginner,2022
-37,Genomics,Rat Genome Database (RGD),Beginner,2022
-38,Geographic,ArcGIS (ArcMap),Advanced,2014
-39,Geographic,ArcGIS (Online),Beginner,2024
-40,Interoperability,Fast Health Interoperability Resources (FHIR),Beginner,2022
-41,Interoperability,Protege,Beginner,2022
-42,Interoperability,Web Ontology Language (OWL),Intermediate,2022
-43,Languages/Frameworks,C++,Intermediate,2000
-44,Languages/Frameworks,CSS,Intermediate,2024
-45,Languages/Frameworks,D3,Intermediate,2016
-46,Languages/Frameworks,Django,Advanced,2024
-47,Languages/Frameworks,HTML,Advanced,2024
-48,Languages/Frameworks,Java,Intermediate,2022
-49,Languages/Frameworks,JavaScript,Advanced,2024
-50,Languages/Frameworks,jQuery,Intermediate,2024
-51,Languages/Frameworks,Python,Advanced,2024
-52,Languages/Frameworks,R,Intermediate,2021
-53,Office Suite,LibreOffice,Intermediate,2023
-54,Office Suite,Microsoft Office,Advanced,2024
-55,Operating Systems,Linux,Advanced,2024
-56,Operating Systems,Mac,Intermediate,2023
-57,Operating Systems,Windows,Advanced,2024
-58,Presentation Tools, Adobe Premiere Elements,Advanced,2022
-59,Presentation Tools, iMovie,Advanced,2016
-60,Presentation Tools, Inkscape,Beginner,2020
-61,Presentation Tools, iPhoto,Advanced,2000
-62,Presentation Tools, Lucidchart,Beginner,2024
-63,Presentation Tools, PowerPoint,Advanced,2024
-64,Presentation Tools,Adobe Photoshop,Advanced,2024
-65,Reference Management,Endnote,Advanced,2017
-66,Reference Management,Sciwheel,Intermediate,2023
-67,Software as a Service (SaaS),Terraform,Beginner,2024
-68,Version Control,Bitbucket,Intermediate,2016
-69,Version Control,Git,Advanced,2024
-70,Version Control,GitHub,Advanced,2024
-71,Watershed Modeling,AQUATOX,Intermediate,2013
-72,Watershed Modeling,BASINS,Intermediate,2013
-73,Watershed Modeling,EPANET,Intermediate,2013
-74,Watershed Modeling,HEC6,Intermediate,1990
-75,Watershed Modeling,HSPF,Intermediate,2013
-76,Watershed Modeling,SWAT,Intermediate,2013
+3,Cloud Computing,AWS EC2,Advanced,2025
+4,Cloud Computing,AWS ECR,Beginner,2025
+5,Cloud Computing,AWS Elastic Beanstalk,Intermediate,2024
+6,Cloud Computing,AWS Lambda,Intermediate,2025
+7,Cloud Computing,AWS RDS,Advanced,2024
+8,Cloud Computing,AWS S3,Advanced,2025
+9,Cloud Computing,AWS SageMaker,Beginner,2025
+10,Collaboration,Confluence,Advanced,2024
+11,Collaboration,Google Meet,Intermediate,2025
+12,Collaboration,Jira,Advanced,2024
+13,Collaboration,Microsoft SharePoint,Advanced,2023
+14,Collaboration,Microsoft Teams,Advanced,2025
+15,Collaboration,Slack,Advanced,2024
+16,Collaboration,Webex,Advanced,2020
+17,Collaboration,Zoom,Advanced,2024
+18,Database,Microsoft Access,Advanced,2015
+19,Database,MySQL,Advanced,2016
+20,Database,PostgreSQL,Advanced,2024
+21,Database Tools,dBeaver,Intermediate,2022
+22,Database Tools,DbVisualizer,Advanced,2024
+23,Database Tools,MySQL Workbench,Advanced,2016
+24,Database Tools,pgAdmin,Advanced,2024
+25,Database Tools,Tableau (Desktop),Intermediate,2019
+26,Database Tools,Tableau Public,Intermediate,2024
+27,Development Tools,Atom,Intermediate,2019
+28,Development Tools,Jupyter Notebook,Advanced,2023
+29,Development Tools,Notepad++,Advanced,2024
+30,Development Tools,PyCharm,Advanced,2024
+31,Development Tools,Rstudio,Advanced,2020
+32,Development Tools,Visual Studio Code,Advanced,2024
+33,Environmental Data,Atlas14,Intermediate,2025
+34,Environmental Data,MMRS,Intermediate,2025
+35,Environmental Data,NWIS,Intermediate,2025
+36,Environmental Data,VIIRS,Intermediate,2025
+37,Genomics,Cytoscape,Intermediate,2022
+38,Genomics,Ensembl BioMart,Intermediate,2022
+39,Genomics,FDA Adverse Event Reporting System (FAERS),Intermediate,2022
+40,Genomics,Gene Expression Omnibus (GEO),Intermediate,2022
+41,Genomics,Genome-wide Association Studies (GWAS) Catalog,Intermediate,2022
+42,Genomics,Human Genome Organization (HUGO),Intermediate,2022
+43,Genomics,Kyoto Encyclopedia of Genes and Genomes (KEGG),Beginner,2022
+44,Genomics,National Center for Biotechnology Information (NCBI),Beginner,2022
+45,Genomics,Rat Genome Database (RGD),Beginner,2022
+46,Geographic,ArcGIS (ArcMap),Advanced,2014
+47,Geographic,ArcGIS (Online),Intermediate,2025
+48,Geographic,ArcGIS Pro,Intermediate,2025
+49,Geographic,NOAA GeoPlatform,Intermediate,2025
+50,Interoperability,Fast Health Interoperability Resources (FHIR),Beginner,2022
+51,Interoperability,Protege,Beginner,2022
+52,Interoperability,Web Ontology Language (OWL),Intermediate,2022
+53,Languages/Frameworks,C++,Intermediate,2000
+54,Languages/Frameworks,CSS,Intermediate,2025
+55,Languages/Frameworks,D3,Intermediate,2016
+56,Languages/Frameworks,Django,Advanced,2024
+57,Languages/Frameworks,HTML,Advanced,2024
+58,Languages/Frameworks,Java,Intermediate,2022
+59,Languages/Frameworks,JavaScript,Advanced,2025
+60,Languages/Frameworks,jQuery,Intermediate,2024
+61,Languages/Frameworks,Python,Advanced,2025
+62,Languages/Frameworks,R,Intermediate,2021
+63,Office Suite,LibreOffice,Intermediate,2023
+64,Office Suite,Microsoft Office,Advanced,2024
+65,Operating Systems,Linux,Advanced,2024
+66,Operating Systems,Mac,Intermediate,2023
+67,Operating Systems,Windows,Advanced,2024
+68,Presentation Tools, Adobe Premiere Elements,Advanced,2022
+69,Presentation Tools, iMovie,Advanced,2016
+70,Presentation Tools, Inkscape,Beginner,2020
+71,Presentation Tools, iPhoto,Advanced,2000
+72,Presentation Tools, Lucidchart,Beginner,2025
+73,Presentation Tools, PowerPoint,Advanced,2024
+74,Presentation Tools,Adobe Photoshop,Advanced,2024
+75,Reference Management,Endnote,Advanced,2017
+76,Reference Management,Sciwheel,Intermediate,2023
+77,Software as a Service (SaaS),Terraform,Beginner,2024
+78,Version Control,Bitbucket,Intermediate,2016
+79,Version Control,Git,Advanced,2024
+80,Version Control,GitHub,Advanced,2025
+81,Version Control,GitLab,Intermediate,2025
+82,Watershed Modeling,AQUATOX,Intermediate,2013
+83,Watershed Modeling,BASINS,Intermediate,2013
+84,Watershed Modeling,EPANET,Intermediate,2013
+85,Watershed Modeling,HEC6,Intermediate,1990
+86,Watershed Modeling,HSPF,Intermediate,2013
+87,Watershed Modeling,SWAT,Intermediate,2013

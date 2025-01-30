@@ -23,7 +23,7 @@ Also, when asked, I added my github token.
 To update my website:
 Update the skillstable.csv
 (base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>python csvtojson.py skillstable.csv (in Anaconda Prompt window)
-Copy the list of skills printed in the terminal into the main.js file
+Copy the upload ordered list of skills printed in the terminal into the main.js file (not using the ordered list right now)
 (base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>
 python -m http.server 8000 
 (in Anaconda3 prompt - http://localhost:8000/)
@@ -116,3 +116,7 @@ If using a grid system, can do the width like this:
     grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
 }
+
+Note: can use Anaconda GUI or can change the Default Python Interpreter Path (Settings, Settings, search for Python Interpreter)
+python to C:\Users\Sandra Karcher\.conda
+

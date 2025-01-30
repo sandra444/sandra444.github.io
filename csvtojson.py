@@ -22,8 +22,8 @@ def main(args):
     make_json(skills_lod)
     # these are ordered by category then tool to make them easier to turn to a printable list
     ordered_skills_lol = ordered_skills_lod(skills_lol)
-    print('\n\n\nList of Lists to copy and paste into Javascript file for DataTable')
-    print(ordered_skills_lol)
+    # print('\n\n\nList of Lists to copy and paste into Javascript file for DataTable')
+    # print(ordered_skills_lol)
     print('---\n')
 
 
@@ -55,7 +55,11 @@ def load_skills_dict(skills_file):
 
 
 def ordered_skills_lod(skills_lod):
+    print('\n\nskills_lod')
+    print(skills_lod)
     ordered_skills_lol = sorted(skills_lod, key = operator.itemgetter(0, 1))
+    print('\n\nordered_skills_lol')
+    print(ordered_skills_lol)
     return ordered_skills_lol 
 
 

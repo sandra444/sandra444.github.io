@@ -24,7 +24,7 @@ To update my website:
 Update the skillstable.csv
 (base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>python csvtojson.py skillstable.csv (in Anaconda Prompt window)
 Copy the upload ordered list of skills printed in the terminal into the main.js file (not using the ordered list right now)
-(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>
+(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io> (also works in my current setup of VSCode)
 python -m http.server 8000 
 (in Anaconda3 prompt - http://localhost:8000/)
 
@@ -33,7 +33,7 @@ Update resume, save to docx and pdf
 Copy pdf resume into repo folder
 Confirm site is working locally
 
-(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git status
+(base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git status (does not work in my current setup of VSCode)
 
 (base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git commit -m "Website 20240219"
 (base) C:\Users\sandr\Documents\sandra444\sandra444.github.io>git push -u origin topbar20240228 (then, in git hub, send pull request to main)
